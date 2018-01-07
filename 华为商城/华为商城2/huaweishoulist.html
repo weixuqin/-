@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel= "shortcut icon" type = "image/x-icon" href="../华为商城1/icon/华为图标.jpg"/>
+<title>商城列表</title>
+	<link href="css/showlist.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		function show(n)
+			{  
+			document.getElementById(n).style.display="block";
+			}
+		function hide(n)
+			{	
+			document.getElementById(n).style.display="none";
+			}
+	</script>
+	<script type="text/javascript">
+	window.onload = function(){
+	  var oTop = document.getElementById("to_top");
+	  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+	  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+	  oTop.style.left = screenw - oTop.offsetWidth +"px";
+	  oTop.style.top = screenh - oTop.offsetHeight + "px";
+	  window.onscroll = function(){
+		var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+		oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+	  }
+	  oTop.onclick = function(){
+		document.documentElement.scrollTop = document.body.scrollTop =0;
+	  }
+	  
+	  	var messageshow = document.getElementsByClassName('messageshow');
+		for(var i = 0; i<messageshow.length;i++){messageshow[i].index = i;}
+		for(var i = 0; i<messageshow.length;i++)
+		{
+		  messageshow[i].onmouseover = function()
+		  {
+		  	messageshow[this.index].style.display = 'block';
+		  }
+		  messageshow[i].onmouseout = function()
+		  {
+		  	messageshow[this.index].style.display = 'none';
+		  }
+	
+		}
+     
+	}  
+	
+	</script>
+	</head>
+<body>
+	<div class="top">
+		<div class="top_content">
+			<div class="top_content_left">
+			<ul>
+				<li><a href="../华为商城1/index.html">华为官网</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">荣耀官网</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">花粉俱乐部</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">帮助中心</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">V码(优购码)</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">企业购</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">Select Region</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">更多精彩</a></li>
+			</ul>
+		</div>
+			<div class="top_content_right">
+			<ul>
+				<li><span>|</span><a href="../华为商城3/华为购物车.html"><img src="image/QQ图片20171122162431.png">购物车(0)</a></li>
+				<li><span>|</span><a href="../华为商城4/商品详情页.html">我的订单</a></li>
+				<li><a href="../华为商城4/商品详情页.html">注册</a></li>
+				<li><a href="../华为商城4/商品详情页.html">请登录</a></li>
+			</ul>
+			</div>
+	</div></div>
+		<div class="top_bottom">
+		  
+			<div class="top_mid">
+				
+				<div class="top_mid2">
+					
+					<div class="top_mid_right">
+						<ul>
+							<li><a href="../华为商城4/商品详情页.html" onMouseOver="show('ite1')" onMouseOut="hide('ite1')">手机</a></li>
+						<li><a href="../华为商城4/商品详情页.html"  onmouseover="show('ite2')" onMouseOut="hide('ite2')">笔记本电脑&amp;平板</a></li>
+						<li><a href="../华为商城4/商品详情页.html" onMouseOver="show('ite3')" onMouseOut="hide('ite3')">穿戴</a></li>
+						<li><a href="../华为商城4/商品详情页.html" onMouseOver="show('ite4')" onMouseOut="hide('ite4')">智能家居</a></li>
+						<li><a href="../华为商城4/商品详情页.html" onMouseOver="show('ite5')" onMouseOut="hide('ite5')">通用配件</a></li>
+						<li><a href="../华为商城4/商品详情页.html" >专属配件</a></li>
+					    </ul>
+					</div>
+					<div class="top_search">
+				<form action="" method="post">
+						<input type="text" placeholder="Search here..." class="search_text">
+					</form>
+			</div>
+				</div>
+				<div class="top_mid_img"><img src="image/logo.png"></div>
+			</div>
+			
+		</div>
+			<div  id="ite1" class="messageshow" >
+		        <div class="message_top"> <ul>
+								<li class="messages1"><a href="../华为商城4/商品详情页.html">全部手机&gt;</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+		         </ul></div>
+		<div class="xiangqing">
+			<div class="messagebox" >
+				<a href="../华为商城4/商品详情页.html"><img src="image/10.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/16.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/15.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/13.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+		</div>
+		
+	</div>	
+	<div  id="ite2" class="messageshow">
+		<ul>
+								<li class="messages1"><a href="../华为商城4/商品详情页.html">全部手机&gt;</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+		</ul>
+		<div class="xiangqing">
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/19.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/20.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/21.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/23.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+		</div>
+		
+	</div>		
+	<div id="ite3" class="messageshow" >
+		<ul>
+								<li class="messages1"><a href="../华为商城4/商品详情页.html">全部手机&gt;</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+		</ul>
+		<div class="xiangqing">
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/27.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/28.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/29.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+		</div>
+		
+	</div>		
+	<div id="ite4" class="messageshow" >
+		<ul>
+								<li class="messages1"><a href="../华为商城4/商品详情页.html">全部手机&gt;</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+		</ul>
+		<div class="xiangqing">
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/31.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/32.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/33.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+		</div>
+		
+	</div>		
+	<div  id="ite5" class="messageshow">
+		<ul>
+								<li class="messages1"><a href="../华为商城4/商品详情页.html">全部手机&gt;</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+								<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+		</ul>
+		<div class="xiangqing">
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/35.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/38.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/39.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+			<div class="messagebox">
+				<a href="../华为商城4/商品详情页.html"><img src="image/40.png"></a>
+				<p class="name0">HUAWEI P10</p>
+				<p class="name1"><b>&yen;</b> <strong>4999.00</strong></p>
+			</div>
+		</div>
+		
+	</div>		
+
+
+	 <div class="wrap_top"><p><a href="../华为商城4/商品详情页.html">首页</a>&gt;&gt;手机</p></div>
+	
+	<div class="wrap">
+	  <div class="wrap_mid_all">
+		<div class="wrap_mid">
+		    <div class="wrap_mid1">
+				<ul class="na">
+					<li>分类：</li>
+					<li><a href="../华为商城4/商品详情页.html">全部</a></li>
+					<li><a href="../华为商城4/商品详情页.html">荣耀</a></li>
+					<li><a href="../华为商城4/商品详情页.html">HUAWEI P系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">荣耀畅玩系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">HUAWEI Mate系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">HUAWEI nova系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">HUAWEI 麦芒系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">华为畅享系列</a></li>
+					<li><a href="../华为商城4/商品详情页.html">合约机</a></li>
+				</ul>
+			
+			</div>
+			<div class="wrap_mid2">
+				
+				<ul class="nb">
+					<li>排序：</li>
+					<li><a href="../华为商城4/商品详情页.html">价格</a><img src="image/QQ图片20171123140937.png"></li>
+					<li><a href="../华为商城4/商品详情页.html">评价数</a><img src="image/QQ图片20171123140956.png"></li>
+					<li><a href="../华为商城4/商品详情页.html">上架时间</a><img src="image/QQ图片20171123140956.png"></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<div class="BOX1">
+		<div class="wrap_bottom">
+		    <ul>
+				<li>
+					<div id="item1" class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/3.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/4.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/8.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/3.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/1.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div id="item2" class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/8.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/4.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/3.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/1.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/8.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div id="item3" class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/2.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/5.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/8.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/1.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+				<li>
+					<div class="wrap_bottom1">
+						<a href="../华为商城4/商品详情页.html"><img src="image/5.png"></a>
+                		<p class="title">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</p>
+                		<p class="price"> <b>&yen;</b> <strong>499.00</strong> </p>
+                		<p class="number"><a href="../华为商城4/商品详情页.html"> 评价<span>1110</span></a> </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+			
+		</div>
+		
+		
+	</div><div class="page-normal">
+    <a class="page-prev"><span>&lt;</span></a>
+    <a class="page-current"><span>1</span></a>
+    <a href="#"><span>2</span></a>
+    <a href="#"><span>3</span></a>
+    <a href="#"><span>4</span></a>
+    <a href="#"><span>5</span></a>
+    <a href="#"><span>6</span></a>
+    <a href="#"><span>...</span></a>
+    <a href="#"><span>30</span></a>
+    <a href="#"><span>31</span></a>
+    <a href="#" class="page-next"><span>&gt;</span></a>
+</div>
+
+	<div id="to_top">返回顶部</div>
+	<div class="show_bottom1">
+		    <ul>
+				<li><a href="#"><img src="image/QQ图片20171123171121.png">百强企业&nbsp;&nbsp;品质保证</a></li>
+				<li><a href="#"><img src="image/QQ图片20171123171204.png">7天退货&nbsp;&nbsp;15天换货</a></li>
+				<li><a href="#"><img src="image/QQ图片20171123171248.png">48元起免运费</a></li>
+				<li><a href="#"><img src="image/QQ图片20171123200717.png">448家维修网点&nbsp;&nbsp;全国联保</a></li>
+			</ul>
+		</div>
+		<div class="show_bottom2">
+			<div class="show_bottom_content">
+			<ul>
+				<li><a href="#">购物相关</a>
+					<ul>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">配送方式</a></li>
+						<li><a href="#">支付方式</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</li>
+				<li><a href="#">保修退换</a>
+					<ul>
+						<li><a href="#">保修政策</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">退换货流程</a></li>
+						<li><a href="#">保修状态查询</a></li>
+					</ul>
+				</li>
+				<li><a href="#">维修与技术支持</a>
+					<ul>
+						<li><a href="#">售后网点</a></li>
+						<li><a href="#">预约维修</a></li>
+						<li><a href="#">手机寄修</a></li>
+						<li><a href="#">维修配件价格查询</a></li>
+					</ul>
+				</li>
+				<li><a href="#">关于我们</a>
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">华为商城简介</a></li>
+						<li><a href="#">华为线下门店</a></li>
+						<li><a href="#">荣耀线下门店</a></li>
+					</ul>
+				</li>
+				<li><a href="#">关注我们</a>
+					<ul>
+						<li><a href="#">新浪微博</a></li>
+						<li><a href="#">腾讯微博</a></li>
+						<li><a href="#">花粉俱乐部</a></li>
+						<li><a href="#">QQ空间</a></li>
+					</ul>
+				</li>
+				<li><a href="#">400-088-6888</a>
+				    <p>24小时客服热线（仅收市话费）</p>
+					<ul>
+						<li><a href="#"><img src="image/QQ图片20171123214108.png"></a></li>
+						<li><a href="#"><img src="image/QQ图片20171123214118.png"></a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		
+			
+		</div>
+		<div class="show_bottom3">
+		
+			<div class="leftArea">
+				<a href="#"><img src="image/flogo.png"></a>
+			</div>
+
+			<div class="midArea">
+				<li><a href="#" class="ss1">隐私政策&nbsp;&nbsp;</a><a href="#">服务政策&nbsp;&nbsp;</a><span>copyright © 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</span></li>
+				<li><span class="ss1">公安备案&nbsp;&nbsp;</span><a href="#">苏公网安备32011402010009号</a><span>|</span><a href="#">苏ICP备17040376号-6</a><span>|</span>&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：苏B2-20130048号<span>&nbsp;&nbsp;|</span></li>
+				<li><span class="ss3">网络文化经营许可证：苏网文[2015] 1599-026号</span></li>
+			</div>
+			<div class="rightArea1">
+				<div class="imgBox">
+					<a href="#"><img src="image/s1.jpg"></a>
+					<a href="#"><img src="image/s2.png"></a>
+					<a href="#"><img src="image/s3.png"></a>
+					<a href="#"><img src="image/s4.png"></a>
+					<a href="#"><img src="image/s5.jpg"></a>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

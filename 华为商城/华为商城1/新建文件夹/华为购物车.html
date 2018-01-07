@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华为商城购物车</title>
+<link href="css/GWC.css" rel="stylesheet" type="text/css"/>
+<!--弹上顶部-->
+<script src="http://libs.baidu.com/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="images/seajs.js"></script>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">seajs.use("goback.js",function(goback){goback.F_backToTop();});</script>
+<script type="text/javascript" src="js/snow.js"></script><script>createSnow('js/', 60);</script>
+
+<script type="text/javascript">
+		window.onload=function(){
+		<!--商品1-->
+		var a = document.getElementById("jian1");
+        var b = document.getElementById("jia1");
+        var c = document.getElementById("text_box1");
+		
+		b.onclick=function(){
+			c.value=parseInt(c.value)+1;
+			}
+		a.onclick=function(){
+			if(c.value>0){
+			c.value=parseInt(c.value)-1;
+			}
+		}
+		<!--商品2-->
+		var d = document.getElementById("jian2");
+        var e = document.getElementById("jia2");
+        var f = document.getElementById("text_box2");
+		
+		e.onclick=function(){
+			f.value=parseInt(f.value)+1;
+			}
+		d.onclick=function(){
+			if(f.value>0){
+			f.value=parseInt(f.value)-1;
+			}
+		}
+		<!--商品3-->
+		var g = document.getElementById("jian3");
+        var h = document.getElementById("jia3");
+        var i = document.getElementById("text_box3");
+		
+		h.onclick=function(){
+			i.value=parseInt(i.value)+1;
+			}
+		g.onclick=function(){
+			if(i.value>0){
+			i.value=parseInt(i.value)-1;
+			}
+		}
+		
+		<!--商品4-->
+		var j = document.getElementById("jian4");
+        var k = document.getElementById("jia4");
+        var l = document.getElementById("text_box4");
+		
+		k.onclick=function(){
+			l.value=parseInt(l.value)+1;
+			}
+		j.onclick=function(){
+			if(l.value>0){
+			l.value=parseInt(l.value)-1;
+			}
+		}
+			
+		
+		}
+</script>
+</head>
+
+<body>
+<!--头部导航区-->
+<div class="top">
+	<div class="top_center">
+		<div class="top_left">
+    		<ul>
+    			<li><a href="#">华为官网</a><span>|</span></li>
+				<li><a href="#">荣耀官网</a><span>|</span></li>
+				<li><a href="#">花粉俱乐部</a><span>|</span></li>
+				<li><a href="#">帮助中心</a><span>|</span></li>
+				<li><a href="#">V码(优购码)</a><span>|</span></li>
+				<li><a href="#">企业购</a><span>|</span></li>
+				<li><a href="#">Select Region</a><span>|</span></li>
+				<li><a href="#" >更多精彩</a></li>
+    		</ul>
+    	</div>
+    	<div class="top_right">
+    		<ul>
+    			<li><a href="#">我的订单</a></li>
+				<li><a href="#">注册</a><span>|</span></li>
+				<li><a href="#">请登录</a></li>
+        	<ul>
+        </div>
+    </div>
+</div>
+
+<!--logo区-->
+<div class="logo">
+	<div class="logo_center">
+		<div class="logo_left">
+        		<img src="image/LOGO110-40.png" alt="购物车"/><span>我的购物车</span>
+     	</div>
+    	<div class=logo_right>
+    		<div class="logo_right1"><img src="image/提交.png"></div>
+        	<div class="logo_right2"><img src="image/订单.png"></div>
+        	<div class="logo_right3"><img src="image/车.png"></div>
+    	</div>
+    </div>
+</div>
+
+<!-- 内容-->
+<div class="beijingse">
+	<div class="kong1"></div>
+    <!--登录提醒-->
+	<div class="denglutixing">
+    	<div class="DLTX_left">
+    		<img src="image/！.png" alt="提示"/>
+            <span class="wenzi">您还没有登录！登陆后可查看之前加入的商品</span>
+        </div>
+        <div class="DLTX_left1">
+        	<div class="denglu"><div class="denglu1"><a href="#">登录</a></div></div>
+        </div>
+    </div>
+    <div class="kong2"></div>
+    <!--提醒领取优惠卷-->
+    <div class="youhuijuan">
+    	<div class="YHJ_left">
+        <img src="image/铃铛.png"alt="提醒优惠卷"/>你有优惠卷可领。<a href="#">点击领取</a>
+        </div>
+    </div>
+    <!--项目-->
+    <div class="kong3"></div>
+    <div class="xiangmu">
+    	<ul>
+        	<li class="li1">商品详情</li>
+            <li class="li2">单价</li>
+            <li class="li3">数量</li>
+            <li class="li4">小计</li>
+            <li class="li5">操作</li>
+        </ul>
+    </div>
+    <div class="kong4"></div>
+    <!--商品1-->
+   	<div class=shangpin1>
+    	<div class="shangpin1_center1">
+        	<div class="SP1_1">
+            	 <input type="checkbox" value="1" name="xuanze"/>
+            </div>
+            <a href="#"><img src="image/物品1.png">
+            <div class="SP1_2">
+            	HUAWEI Mate 10 Pro 6GB+64GB 全网通版（宝石蓝）
+            </div></a>
+            <div class="SP1_3">
+            	<div class="jiage1">¥4899.00</div>
+            </div>
+            <div class="SP1_4">
+            	<input id="jian1" class="jian1" type="button" value="-"/>
+            	<input id="text_box1" class="text_box1" type="text" value="1" />
+                <input id="jia1" class="jia1" type="button" value="+"/>
+            </div>
+            <div class="SP1_5">
+            	<span>¥4899.00</span>
+            </div>
+            <div class="SP1_6">
+            	<a href="#">删除</a>
+            </div>
+        </div>
+        <div class="shangpin1_center2">
+        	<div class="fuwu1">
+            	<div class="fuwu1_1">
+                <span>服务</span>
+                </div>
+                <div class="fuwu1_2">
+                	<div class="fuwu1_21">延保 可选延保</div>
+                    <div class="fuwu1_22">碎屏保 可选碎屏保</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+   <div class="kong5"></div>
+   
+   <!--商品2-->
+   	<div class=shangpin1>
+    	<div class="shangpin1_center1">
+        	<div class="SP1_1">
+            	 <input type="checkbox" value="1" name="xuanze"/>
+            </div>
+            <a href="#"><img src="image/物品2.png">
+            <div class="SP1_2">
+            	HUAWEI 麦芒6 4GB+64GB 全网通版（流光金）
+            </div></a>
+            <div class="SP1_3">
+            	<div class="jiage1">¥2399.00</div>
+            </div>
+            <div class="SP1_4">
+            	<input id="jian2" class="jian1" type="button" value="-"/>
+            	<input id="text_box2" class="text_box1" type="text" value="1" />
+                <input id="jia2" class="jia1" type="button" value="+"/>
+            </div>
+            <div class="SP1_5">
+            	<span>¥2399.00</span>
+            </div>
+            <div class="SP1_6">
+            	<a href="#">删除</a>
+            </div>
+        </div>
+        <div class="shangpin1_center2">
+        	<div class="fuwu1">
+            	<div class="fuwu1_1">
+                <span>服务</span>
+                </div>
+                <div class="fuwu1_2">
+                	<div class="fuwu1_21">延保 可选延保</div>
+                    <div class="fuwu1_22">碎屏保 可选碎屏保</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="kong6"></div>
+    
+     <!--商品3-->
+   	<div class=shangpin1>
+    	<div class="shangpin1_center1">
+        	<div class="SP1_1">
+            	 <input type="checkbox" value="1" name="xuanze"/>
+            </div>
+            <a href="#"><img src="image/商品3.png">
+            <div class="SP1_2">
+            	华为畅享7 Plus 4GB+64GB 全网通高配版（香槟金）
+            </div></a>
+            <div class="SP1_3">
+            	<div class="jiage1">¥1499.00</div>
+            </div>
+            <div class="SP1_4">
+            	<input id="jian3" class="jian1" type="button" value="-"/>
+            	<input id="text_box3" class="text_box1" type="text" value="1" />
+                <input id="jia3" class="jia1" type="button" value="+"/>
+            </div>
+            <div class="SP1_5">
+            	<span>¥1499.00</span>
+            </div>
+            <div class="SP1_6">
+            	<a href="#">删除</a>
+            </div>
+        </div>
+        <div class="shangpin1_center2">
+        	<div class="fuwu1">
+            	<div class="fuwu1_1">
+                <span>服务</span>
+                </div>
+                <div class="fuwu1_2">
+                	<div class="fuwu1_21">延保 可选延保</div>
+                    <div class="fuwu1_22">碎屏保 可选碎屏保</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  	<div class="kong8"></div>
+    <!-- 商品4-->
+    <div class=shangpin1>
+    	<div class="shangpin1_center1">
+        	<div class="SP1_1">
+            	 <input type="checkbox" value="1" name="xuanze"/>
+            </div>
+            <a href="#"><img src="image/商品4.png">
+            <div class="SP1_2">
+            	荣耀V9 全网通高配版 6GB+64GB（极光蓝）
+            </div></a>
+            <div class="SP1_3">
+            	<div class="jiage1">¥2699.00</div>
+            </div>
+            <div class="SP1_4">
+            	<input id="jian4" class="jian1" type="button" value="-"/>
+            	<input id="text_box4" class="text_box1" type="text" value="1" />
+                <input id="jia4" class="jia1" type="button" value="+"/>
+            </div>
+            <div class="SP1_5">
+            	<span>¥2699.00</span>
+            </div>
+            <div class="SP1_6">
+            	<a href="#">删除</a>
+            </div>
+        </div>
+        <div class="shangpin1_center2">
+        	<div class="fuwu1">
+            	<div class="fuwu1_1">
+                <span>服务</span>
+                </div>
+                <div class="fuwu1_2">
+                	<div class="fuwu1_21">延保 可选延保</div>
+                    <div class="fuwu1_22">碎屏保 可选碎屏保</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="kong7"></div>
+    
+	<!--结算-->
+    <div class="jiesuan">
+    	<div class="jiesuan_center">
+        	<div class="JS_left">
+        		<input type="checkbox" value="1" name="xuanze"/>
+            	<span>全选</span>
+            	<span>删除</span>
+             </div>
+            <a href="#"><div class="JS_right1">
+            	<div class="JS_right1_1">立即结算</div>
+            </div></a>
+            <div class="JS_right2">总计：
+            	<span>¥11496.00</span>
+            </div>
+        </div>
+    </div>
+  
+   <div class="kong7"></div>
+ 	  
+ <!--底部上-->  
+   <div class="dibu1">
+   		<div class="dibu1_center">
+   			<div class="DB11">
+        		<div class="DB11_center">
+            		<a href="#"><img src="image/底1.png"><span>百强企业 品质保证<span></a>
+                </div>
+        	</div>
+        	<div class="DB12">
+        		<div class="DB12_center">
+                	<a href="#"><img src="image/底2.png"><span>7天退货 15天换货<span></a>
+                </div>
+        	</div>
+        	<div class="DB13">
+        		<div class="DB13_center">
+                	<a href="#"><img src="image/底3.png"><span>48元起免运费<span></a>
+                </div>
+        	</div>
+        	<div class="DB14">
+        		<div class="DB14_center">
+                	<a href="#"><img src="image/底4.png"><span>448家维修网点 全国联保<span></a>
+                </div>
+        	</div>
+   		</div> 
+	</div>
+    
+    <!--底部中-->
+    <div class="dibu2">
+    	<div class="dibu2_center">
+        	<div class="DB21">
+            	<div class="DB21_1">购物相关</div>
+                <div class="DB21_2">
+                	<ul>
+                    	<li><a href="#">购物指南</a></li>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">常用问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB22">
+            	<div class="DB22_1">保修与退换货</div>
+                <div class="DB22_2">
+                	<ul>
+                    	<li><a href="#">保修政策</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">退换货流程</a></li>
+                        <li><a href="#">保修状态查询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB23">
+            	<div class="DB23_1">维修与技术支持</div>
+                <div class="DB23_2">
+                	<ul>
+                    	<li><a href="#">售后网点</a></li>
+                        <li><a href="#">预约维修</a></li>
+                        <li><a href="#">手机寄修</a></li>
+                        <li><a href="#">维修配件价格查询</a></li>
+                        <li><a href="#">上门服务</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB24">
+            	<div class="DB24_1">关于我们</div>
+                <div class="DB24_2">
+                	<ul>
+                    	<li><a href="#">公司介绍</a></li>
+                        <li><a href="#">华为商城简介</a></li>
+                        <li><a href="#">华为线下门店</a></li>
+                        <li><a href="#">荣耀线下门店</a></li>
+                        <li><a href="#">诚征英才</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB25">
+            	<div class="DB25_1">关于我们</div>
+                <div class="DB25_2">
+                	<ul>
+                    	<li><a href="#">新浪微博</a></li>
+                        <li><a href="#">腾讯微博</a></li>
+                        <li><a href="#">花粉俱乐部</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB26">
+            	<div class="DB26_1">友情链接</div>
+                <div class="DB26_2">
+                	<ul>
+                    	<li><a href="#">华为官网</a></li>
+                        <li><a href="#">华为商城手机版</a></li>
+                        <li><a href="#">荣耀官网</a></li>
+                        <li><a href="#">花粉俱乐部</a></li>
+                        <li><a href="#">莫塞尔商城</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DB27">
+            	<div class="DB27_1">400-088-6888</div>
+                <div class="DB27_2">
+                	<div class="DB27_2_1">24小时客服热线（仅收市话费）</div>
+                    <a href="#"><img src="image/在线客服.png"></a>
+                    <a href="#"><img src="image/不良信息举报.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--底部下-->
+    <div class="dibu3">
+    	<div class="dibu3_center">
+        	<div class="DB3_1">
+            	<a href="#"><img src="image/底部logo.png"></a>
+            </div>
+            <div class="DB3_2">
+            	<div class="DB3_wenzi1">
+                	<a href="#">隐私政策</a>
+                    <a href="#">服务协议</a> Copyright©2012-2017 华为软件技术有限公司 版权所有 保留一切权利
+                </div>
+                <div class="DB3_wenzi2">公司备案
+                	<a href="#">苏公网安备32011402010009号</a>|
+                    <a href="#">苏ICP备17040376号-6</a>| 增值电信业务经营许可证：苏B2-20130048号|
+                </div>
+                <div class="DB3_wenzi3">
+                	网络文化经营许可证：<a href="#">苏网文[2015]1599-026号</a>
+                </div>
+            </div>
+            <div class="DB3_3">
+            	<img src="image/底下右1.png">
+                <img src="image/底下右2.png">
+                <img src="image/底右3.png">
+                <img src="image/底右4.png">
+                <img src="image/底右5.png">
+            <div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

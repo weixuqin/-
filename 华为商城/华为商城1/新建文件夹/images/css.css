@@ -1,0 +1,16 @@
+address,cite,dfn,em,var,i{font-style:normal;}
+ul,ol,dl,li{list-style:none;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+a{
+	color:#5e5e5e;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff6c01;
+	text-decoration:underline;
+}
+:focus{  
+	outline: 0 none;
+}
+.backToTop { display: none;width: 95px;height: 130px;padding: 5px 0;background:url(backtotop.png) no-repeat;_background:url(backtotop.gif) no-repeat;background-position: 0 -20px;text-align: center;position: fixed;_position: absolute;right:0;bottom: -12px;_bottom: "auto";cursor: pointer;}
